@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Klovborg Kino - Projekt</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="header">
+        
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="biografklub.html">CINEMACLUB</a></li>
+                    <li><a href="https://www.klovborgkino.dk/dagens-program/alle-programlagte-film/">PROGRAM</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h1>Your Local Movie Experience</h1>
+            <p>We take the experience of a great movie closer to you.<br>Come visit us and do not just watch a movie. <br> Be a part of one.</p>
+            <a href="contact.html" class="visit-btn">Visit Us Now</a>
+        </div>
+    </section>
+
+<!---------- now showing ---------->
+    
+    <section class="showing">
+        <h1>Now Showing</h1>
+        <p>Some of the most popular movies showing right now.</p>
+            <div class="row">
+                <div class="showing-col">
+                    <img src="images/bond.jpg" alt="james bond">
+                    <div class="layer">
+                        <h3>No Time To Die</h3>
+                    </div>
+                </div>
+                <div class="showing-col">
+                    <img src="images/skyggen.jpg" alt="skyggen i mit øje">
+                    <div class="layer">
+                        <h3>Skyggen I Mit Øje</h3>
+                    </div>
+                </div>
+                <div class="showing-col">
+                    <img src="images/coda.jpg" alt="coda">
+                    <div class="layer">
+                        <h3>Coda</h3>
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+    
+<!---------- cinema halls ---------->
+    
+    <section class="halls">
+        <h1>Our Cinema Halls</h1>
+        <p>We have three big halls with the best Dolby Digital surround sound</p>
+            <div class="row">
+                <div class="halls-col">
+                    <img src="images/blå-sal.jpg" alt="blå sal">
+                    <h3>Blue Hall</h3>
+                    <p>The biggest of our halls, with space for up to 160 people.</p>
+                </div>
+                <div class="halls-col">
+                    <img src="images/rød-sal.jpg" alt="rød sal">
+                    <h3>Red Hall</h3>
+                    <p>Our next biggest hall, with space for up to 115 people.</p>
+                </div>
+                <div class="halls-col">
+                    <img src="images/grøn-sal.jpg" alt="grøn sal">
+                    <h3>Green Hall</h3>
+                    <p>Our smallest but also most exclusive hall, with space for op to 85 people.</p>
+                </div>
+            </div>
+    </section>
+    
+    
+<!---------- reviews ---------->
+    
+    <section class="reviews">
+        <h1>What Our Viewers Are Saying</h1>
+            <div class="row">
+                <div class="reviews-col">
+                    <img src="images/user1.png" alt="review 1">
+                    <div> 
+                        <p style="color: rgb(216, 216, 216);">Excellent audio and image quality, comfortable seats and friendly staff, highly recommended, this seems like it'll quickly become my new favorite to visit when going to the cinema.</p>
+                        <h3 style="color: rgb(233, 233, 233);">Søren Klintrup</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="reviews-col">
+                    <img src="images/user2.png" alt="review 2">
+                    <div>
+                        <p style="color: rgb(216, 216, 216);">Great cinema well worth the drive - good screen, perfect sound and great seats with good leg room.</p>
+                        <h3 style="color: rgb(233, 233, 233);">Lasse Schmidt</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+                
+            </div>
+    </section>   
+ 
+<!-------- footer ---------->
+
+<section class="footer">
+        <h4>About Us</h4>
+        <p>Klovborg Kino startet as an idea, an idea to bring the incredible experience of watching a movie like the director intended <br>out of the big cities, and make the experience avaialble to more movie lovers.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/Klovborg-Kino-1-2-3-D-216173368427871"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+            
+        </div>
+</section>    
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>

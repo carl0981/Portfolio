@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CinemaClub Denmark</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="biografklub.html">CINEMACLUB</a></li>
+                    <li><a href="https://www.klovborgkino.dk/dagens-program/alle-programlagte-film/">PROGRAM</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>   
+            <h1>CinemaClub Denmark</h1>
+    </section>
+    
+    
+<!------- cinemaclub -------->
+    
+<section class="skyggen">
+    <div class="row">
+        <div class="skyggen-col">
+            <h1>Skyggen i mit øje</h1> 
+            <p><strong>Gribende og intens 2. verdenskrigsfortælling af Ole Bornedal</strong><br>
+                Om morgenen den 21. marts 1945 er nonnerne og skolekammeraterne Rigmor, Eva og Henry fra Den Franske Skole på Frederiksberg klar til at starte skoledagen. Langt derfra – på den anden side af Nordsøen – forbereder britiske piloter fra Royal Air Force sig til en afgørende mission for den danske modstandsbevægelse. De sætter kurs mod Shellhuset, Gestapos hovedkvarter midt i København. På øverste etage har tyskerne anbragt 26 danske fanger som et levende værn. Angrebet lykkes, men ikke langt derfra rammer tragedien. Et fly er styrtet ned tæt ved Den Franske Skole, og branden får de efterfølgende bombefly til at tro, at målet ligger under røgsøjlen … <br><br>
+                Fejlbombardementet på Den Franske Skole er en af de største tragedier i nyere dansk historie. Filmen behandler et vigtigt stykke danmarkshistorie, ikke kun for ofrene og deres familier, men også for alle de overlevende, som mange år efter stadig lever med mindet om den dag. Ole Bornedal er en af dansk films
+                mest markante filminstruktører, der slog sit navn fast med ’Nattevagten’ og den populære TV-serie ’Charlot og Charlotte’. Senest har han instrueret filmene ’Dræberne fra Nibe’ og ’Så længe jeg lever’.
+            </p>
+            <a href="https://biografklubdanmark.dk/saesonens-film/film-saeson-2021-2022/skyggen-i-mit-oje/" class="hero-btn red-btn">BiografKlub Danmark</a>
+        </div>
+        <div class="skyggen-col">
+            <img src="images/øje.jpg" alt="skyggen i mit øje">
+        </div>
+    </div>    
+</section>
+    
+<!-------- footer ---------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Klovborg Kino startet as an idea, an idea to bring the incredible experience of watching a movie like the director intended <br>out of the big cities, and make the experience avaialble to more movie lovers.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/Klovborg-Kino-1-2-3-D-216173368427871"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+        
+    </div>
+</section>    
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>    
